@@ -57,6 +57,11 @@ include('dbcon.php');
         </tbody>
     </table>
 </div>
+<?php
+if(isset($_GET['update_message'])){
+    echo "<h4>".$_GET['update_message']."</h4>";
+}
+?>
 <?php 
 include('footer.php'); 
 ?>
